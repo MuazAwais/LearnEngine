@@ -6,7 +6,7 @@ const PartnersCompanies = () => {
             <div className="text-[25px] font-black ">25k</div>
             <div className="">Companies that partner with us</div>
         </div>
-        <div className="flex gap-[81px] flex-wrap ">
+        <div className="flex gap-[81px] flex-wrap  justify-center items-center">
             <div className=" rounded-full overflow-hidden "><img className="w-[100px] h-[100px] " src="https://res.cloudinary.com/dv8dtipj1/image/upload/v1757776501/4011bd7a2c7742feb086700b54306e673e141afe_pp06jq.jpg" alt="" /></div>
             <div className=" rounded-full overflow-hidden "><img className="w-[100px] h-[100px] " src="https://res.cloudinary.com/dv8dtipj1/image/upload/v1757776501/a48c04119a1cc72ae4b1f22c6174e2a1117e0ce6_w3ysvk.jpg" alt="" /></div>
             <div className=" rounded-full overflow-hidden "><img className="w-[100px] h-[100px] " src="https://res.cloudinary.com/dv8dtipj1/image/upload/v1757776501/c8f6dddc3a69f1cdb0f689ba557a9f36b32e6f40_jj27id.jpg" alt="" /></div>

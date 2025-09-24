@@ -5,7 +5,7 @@ import Greeting from '../../components/ui/greeting';
 
 const HeroSection = () => {
   return (
-    <div className="max-w-[1440px] md:mx-auto px-2 flex flex-col md:flex-row gap-6 md:gap-[290px] relative">
+    <div className="max-w-[1440px] md:mx-auto px-2 flex flex-col xl:flex-row gap-6 md:gap-[290px] relative">
       
       {/* LEFT: Text Section */}
       <div className="flex flex-col gap-6 max-w-[450px]">
