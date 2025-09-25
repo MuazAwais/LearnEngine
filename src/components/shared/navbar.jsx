@@ -35,7 +35,6 @@ const Navbar = () => {
   },[])
   return (
     <div id="navbar" className={`w-full h-[8ch] backdrop-blur-sm flex items-center justify-between md:px-10 sm:px-10 px-4 fixed top-0 transition-all ease-in-out duration-300 z-50 border-b border-neutral-200 ${isScrolled ? 'bg-sky-50/30':'bg-transparent'}`}>
-       
        <div className="flex items-center gap-2 md:pr-16 pr-0">
         <Link to="/" className='text-lg font-semibold  flex items-center gap-x-2 text-[#319D8E]'><FiBookOpen size={24}/><span>Learn<span className='text-[#FE7558]'>Engine</span></span></Link>
        </div>

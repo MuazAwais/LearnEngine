@@ -5,10 +5,10 @@ import Greeting from '../../components/ui/greeting';
 
 const HeroSection = () => {
   return (
-    <div className="max-w-[1440px] md:mx-auto px-2 flex flex-col xl:flex-row gap-6 md:gap-[290px] relative">
+    <div className="max-w-[1440px] md:mx-auto px-2 flex flex-col xl:flex-row gap-4 xl:gap-[220px] relative">
       
       {/* LEFT: Text Section */}
-      <div className="flex flex-col gap-6 max-w-[450px]">
+      <div className="flex flex-col gap-6 xl:max-w-[450px]">
         <div>
           <span className="text-xs text-[#41CB47] font-normal">
             Best way to learn from anywhere
@@ -33,32 +33,27 @@ const HeroSection = () => {
       </div>
 
       {/* RIGHT: Image Section */}
-      <div className="max-w-[700px] flex relative md:scale-100 scale-75">
-        <div className="relative flex flex-col justify-end">
+      <div className="max-w-[700px] mx-auto flex relative ">
+        <div className="relative flex flex-col justify-end items-center xsm:w-[500px] md:w-[700px]">
           {/* Rotated background card */}
-          <div className="bg-[#CEEBE4] w-[330px] sm:w-[368px] h-[330px] sm:h-[368px] absolute z-[1] rounded-lg rotate-[15deg]"></div>
+          <div className="bg-[#CEEBE4] w-[330px] xsm:w-[368px] h-[330px] xsm:h-[368px] absolute z-[1] rounded-lg rotate-[15deg]"></div>
           {/* Back card */}
-          <div className="bg-[#F8775B] w-[330px] sm:w-[368px] h-[330px] sm:h-[368px] absolute z-[2] rounded-lg"></div>
+          <div className="bg-[#F8775B] w-[330px]  xsm:w-[368px] h-[330px] xsm:h-[368px] absolute z-[2] rounded-lg"></div>
           {/* Image */}
-          <div className="z-[3] w-[330px] sm:w-[350px]">
+          <div className="z-[3] w-[330px] xsm:w-[350px]">
             <img
               src="https://res.cloudinary.com/dv8dtipj1/image/upload/v1757776499/73a9c03aadc019ba3468c832f506b15a70dbd6cb_d6jeqy.png"
               alt="Promotion"
             />
           </div>
+          <div className='z-[6] absolute right-0 bottom-40 hidden sm:block'>
+            <Class/>
+          </div>
+          <div className='z-[7] absolute left-0 bottom-20 hidden sm:block'>
+            <Greeting/>
+          </div>
         </div>
       </div>
-
-      {/* Greeting Component */}
-      <div className="absolute z-[4] left-1 md:left-[55%] bottom-20 scale-75">
-        <Greeting />
-      </div>
-
-      {/* Class Component */}
-      <div className="absolute z-[5] md:left-[85%] bottom-40">
-        <Class />
-      </div>
-
     </div>
   );
 };
