@@ -1,4 +1,3 @@
-
 import AboutUs from './aboutUs'
 import HeroSection from './heroSection'
 import PartnersCompanies from './partnersCompanies'

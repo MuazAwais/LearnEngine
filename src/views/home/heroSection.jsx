@@ -1,6 +1,7 @@
 import React from 'react';
 import Class from '../../components/ui/class';
 import Greeting from '../../components/ui/greeting';
+import Chart from '../../components/ui/chart';
 
 
 const HeroSection = () => {
@@ -51,6 +52,9 @@ const HeroSection = () => {
           </div>
           <div className='z-[7] absolute left-0 bottom-20 hidden sm:block'>
             <Greeting/>
+          </div>
+          <div className='z-[7] absolute left-0 top-20 hidden sm:block'>
+            <Chart/>
           </div>
         </div>
       </div>
