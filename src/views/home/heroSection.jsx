@@ -35,7 +35,7 @@ const HeroSection = () => {
 
       {/* RIGHT: Image Section */}
       <div className="max-w-[700px] mx-auto flex relative ">
-        <div className="relative flex flex-col justify-end items-center xsm:w-[500px] md:w-[700px]">
+        <div className="relative flex flex-col justify-end items-center xsm:w-[400px] sm:w-[600px] md:w-[700px]">
           {/* Rotated background card */}
           <div className="bg-[#CEEBE4] w-[330px] xsm:w-[368px] h-[330px] xsm:h-[368px] absolute z-[1] rounded-lg rotate-[15deg]"></div>
           {/* Back card */}
