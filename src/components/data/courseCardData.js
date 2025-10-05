@@ -2,6 +2,7 @@ const courseCardData = [
   {
     title: "Web Development from Beginning to Pro",
     instructor: "Kane Willsons",
+    instructorImage: "https://res.cloudinary.com/dv8dtipj1/image/upload/v1757776498/824d7d6efc640d187afe768f1d9df35c95e65dbd_htp6fe.jpg",
     rating: 4.8,
     students: 25599,
     duration: "12 hrs 15 min",
@@ -13,6 +14,7 @@ const courseCardData = [
   {
     title: "Website Designing",
     instructor: "John Smith",
+    instructorImage: "https://res.cloudinary.com/dv8dtipj1/image/upload/v1757776498/7c6a75905862c36ee00e6b33d1f80a861a554866_rwakdg.jpg",
     rating: 4.8,
     students: 25599,
     duration: "12 hrs 15 min",
@@ -24,6 +26,7 @@ const courseCardData = [
   {
     title: "Mobile App Development",
     instructor: "Peter Mark",
+    instructorImage: "https://res.cloudinary.com/dv8dtipj1/image/upload/v1757776497/fa36050c7b637c24672f9c7a62d1be66cd613797_bovxht.jpg",
     rating: 4.8,
     students: 25599,
     duration: "12 hrs 15 min",
@@ -35,6 +38,7 @@ const courseCardData = [
   {
     title: "Search Engine Optimization",
     instructor: "Abbot Ibad",
+    instructorImage: "https://res.cloudinary.com/dv8dtipj1/image/upload/v1757776498/8aaf3438e4ab93797e12ae06ade132c93d0f48ef_jscqom.jpg",
     rating: 4.8,
     students: 25599,
     duration: "12 hrs 15 min",
@@ -46,6 +50,7 @@ const courseCardData = [
   {
     title: "Graphic Designing",
     instructor: "Kamran Hess",
+    instructorImage: "https://res.cloudinary.com/dv8dtipj1/image/upload/v1757776498/5ba633408981907adb4cdc9c14be2ac429a30ff6_fnqxyg.jpg",
     rating: 4.8,
     students: 25599,
     duration: "12 hrs 15 min",
@@ -57,6 +62,7 @@ const courseCardData = [
   {
     title: "Content Writing",
     instructor: "Shrya",
+    instructorImage: "https://res.cloudinary.com/dv8dtipj1/image/upload/v1757776497/7a18e69eca34ee41b570f1948b4e8373ad826041_y4dtcr.jpg",
     rating: 4.8,
     students: 25599,
     duration: "12 hrs 15 min",
@@ -68,6 +74,7 @@ const courseCardData = [
   {
     title: "Freelancing",
     instructor: "Jasmine",
+    instructorImage: "https://res.cloudinary.com/dv8dtipj1/image/upload/v1757776498/c2a1e6f4fc91d9494fd35976671dec570d748343_x5tkyd.jpg",
     rating: 4.8,
     students: 25599,
     duration: "12 hrs 15 min",
@@ -79,6 +86,7 @@ const courseCardData = [
   {
     title: "Digital Marketing",
     instructor: "Goyalee",
+    instructorImage: "https://res.cloudinary.com/dv8dtipj1/image/upload/v1757776499/d3c6c0f0deeb8f5d8ac8b3780b8ad0d1791ed9e6_pi0n12.jpg",
     rating: 4.8,
     students: 25599,
     duration: "12 hrs 15 min",

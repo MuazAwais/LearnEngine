@@ -9,7 +9,7 @@ const InstructorsCard = () => {
   return (
     <div className="max-w-[1440px] mx-auto w-full flex flex-col">
       <h2 className="uppercase text-[#FE7558] text-[18px]">Instructors</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 py-4 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 py-4 place-items-center">
         {/* Single Instructor Card */}
         {card.map((instructor, index) => (
           <div
