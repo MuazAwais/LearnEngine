@@ -44,7 +44,7 @@ const courseCardData = [
     duration: "12 hrs 15 min",
     lectures: true,
     level: "Medium",
-    price: 119.99,
+    price: 0,
     image: "https://res.cloudinary.com/dv8dtipj1/image/upload/v1757776500/25faf3c2095a6ab25a99284e7bd6c2a0719eea08_zxrruy.jpg"
   },
   {
