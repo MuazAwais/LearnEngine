@@ -12,7 +12,7 @@ const CoursesCards = ({ cardData }) => {
         <h2 className="uppercase text-[#FE7558] text-[18px]">
           Students Favorite
         </h2>
-        <h3 className="text-[40px] font-semibold sm:text-[50px] md:text-[60px] lg:text-[65px] xl:text-[70px]">
+        <h3 className="text-[40px] font-semibold sm:text-[50px] md:text-[60px] lg:text-[65px] xl:text-[70px] bg-gradient-to-r from-gray-400 to-[#45c9c2]  text-transparent bg-clip-text inline-block">
           Popular Courses
         </h3>
       </div>
