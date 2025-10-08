@@ -1,5 +1,7 @@
 import React from "react";
-
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { Link } from "react-scroll";
 const Footer = () => {
   return (
     <div className="mt-[50px] bg-[#319D8E] text-gray-100">
@@ -14,27 +16,32 @@ const Footer = () => {
           <div className="text-[12px] md:text-[14px] lg:text-[16px]">
             © 2024 Learn Engine. All rights reserved.
           </div>
+          <div className="flex gap-4 text-[20px]">
+              <div className="border-2 border-white px-2 py-2 rounded-full hover:text-[#319d8e] hover:bg-gray-100"><a href="https://www.facebook.com" target="block"><FaFacebookF /></a></div>
+              <div className="border-2 border-white px-2 py-2 rounded-full hover:text-[#319d8e] hover:bg-gray-100"><a href="hhtps://www.instagram.com" target="block"><FaInstagram /></a></div>
+              <div className="border-2 border-white px-2 py-2 rounded-full hover:text-[#319d8e] hover:bg-gray-100"><a href="https://www.x.com" target="block"><FaXTwitter /></a></div>
+          </div>
         </div>
         <div className="flex flex-col gap-4">
           <div className="text-[18px] md:text-[20px] lg:text-[22px] font-semibold">
             Quick Links
           </div>
           <div className="flex flex-col gap-2 text-[12px] md:text-[14px] lg:text-[16px]">
-            <a href="#home" className="hover:underline">
+            <Link to="home" smooth={true} duration={500}  className="hover:underline hover:cursor-pointer">
               Home
-            </a>
-            <a href="#about" className="hover:underline">
+            </Link>
+            <Link to="about" smooth={true} duration={500} className="hover:underline hover:cursor-pointer">
               About Us
-            </a>
-            <a href="#courses" className="hover:underline">
+            </Link>
+            <Link to="courses" smooth={true} duration={500} className="hover:underline hover:cursor-pointer">
               Courses
-            </a>
-            <a href="#instructors" className="hover:underline">
+            </Link>
+            <Link to="instructors" smooth={true} duration={500} className="hover:underline hover:cursor-pointer">
               Instructors
-            </a>
-            <a href="#contact" className="hover:underline">
+            </Link>
+            <Link to="contact" smooth={true} duration={500} className="hover:underline hover:cursor-pointer">
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
         <div className="">

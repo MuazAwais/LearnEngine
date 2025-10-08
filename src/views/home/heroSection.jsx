@@ -27,7 +27,7 @@ const HeroSection = () => {
           <button className="py-3 px-4 bg-[#FE7558] text-white text-xs rounded-xl hover:bg-[#fac2b7] hover:text-[#4e4e4e]">
             Start Learning
           </button>
-          <button className="py-3 px-4 border-2 border-black text-xs rounded-xl">
+          <button className="py-3 px-4 border-2 border-black text-xs rounded-xl hover:bg-[#181818] hover:text-white">
             Discover
           </button>
         </div>

@@ -59,35 +59,51 @@ const ContactUs = () => {
             noValidate
           >
             <div className="flex flex-col md:flex-row gap-6 md:gap-2 w-full relative">
+                <div className="w-full relative">
               <input
+                id="firstName"
+                name="firstName"
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
                 type="text"
                 className="border-gray-400 px-4 py-3 w-full rounded-lg border-2"
                 placeholder="First Name"
-                value={formik.values.firstName}
+                {...formik.getFieldProps('firstName')}
               />
               {formik.touched.firstName && formik.errors.firstName ? (
                 <div className="error text-red-600 absolute top-[53px] text-[12px] left-2">
                   {formik.errors.firstName}
                 </div>
               ) : null}
+              </div>
+              <div className="w-full relative">
               <input
+                id="lastName"
+                name="lastName"
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
                 type="text"
                 className="border-gray-400 px-4 py-3 w-full rounded-lg border-2"
                 placeholder="Last Name"
-                value={formik.values.lastName}
+                {...formik.getFieldProps('lastName')}
               />
-              {formik.touched.firstName && formik.errors.firstName ? (
-                <div className="error text-red-600 absolute top-[53px] text-[12px] right-40">
-                  {formik.errors.firstName}
+              {formik.touched.lastName && formik.errors.lastName ? (
+                <div className="error text-red-600 absolute top-[53px] text-[12px] left-1">
+                  {formik.errors.lastName}
                 </div>
               ) : null}
+                </div>
             </div>
             <div className="w-full relative">
               <input
+                id="email"
+                name="email"
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
                 type="email"
                 className="px-4 py-3 w-full rounded-lg border-gray-400 border-2"
                 placeholder="Email"
-                value={formik.values.email}
+                {...formik.getFieldProps('email')}
               />
               {formik.touched.email && formik.errors.email ? (
                 <div className="error text-red-600 absolute top-[53px] text-[12px] left-2">
@@ -97,10 +113,14 @@ const ContactUs = () => {
             </div>
             <div className="w-full rounded-lg relative">
               <input
+                id="phoneNumber"
+                name="phoneNumber"
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
                 type="number"
                 className="px-4 py-3 w-full  rounded-lg border-gray-400 border-2"
                 placeholder="Phone Number"
-                value={formik.values.phoneNumber}
+                {...formik.getFieldProps('phoneNumber')}
               />
               {formik.touched.phoneNumber && formik.errors.phoneNumber ? (
                 <div className="error text-red-600 absolute top-[53px] text-[12px] left-2">
@@ -110,13 +130,15 @@ const ContactUs = () => {
             </div>
             <div className="w-full rounded-lg relative">
               <textarea
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
                 name="massege"
-                id=""
+                id="massege"
                 cols="10"
                 rows="5"
                 placeholder="Massege"
                 className="px-4 py-3 w-full rounded-lg border-gray-400 border-2"
-                value={formik.values.message}
+                {...formik.getFieldProps('message')}
               ></textarea>
               {formik.touched.message && formik.errors.message ? (
                 <div className="error text-red-600 absolute bottom-[-15px] text-[12px] left-2">

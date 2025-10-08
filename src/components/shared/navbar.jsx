@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react'
 import { FaBars } from 'react-icons/fa';
 import { FiBookOpen } from 'react-icons/fi';
 import { IoMdClose } from 'react-icons/io';
-import { Link, useLocation } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
+import { Link } from 'react-scroll'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,15 +37,15 @@ const Navbar = () => {
   return (
     <div id="navbar" className={`w-full h-[8ch] backdrop-blur-sm flex items-center justify-between md:px-10 sm:px-10 px-4 fixed top-0 transition-all ease-in-out duration-300 z-50 border-b border-neutral-200 ${isScrolled ? 'bg-sky-50/30':'bg-transparent'}`}>
        <div className="flex items-center gap-2 md:pr-16 pr-0">
-        <Link to="/" className='text-lg font-semibold  flex items-center gap-x-2 text-[#319D8E]'><FiBookOpen size={24}/><span>Learn<span className='text-[#FE7558]'>Engine</span></span></Link>
+        <Link to="home" smooth={true} duration={500} className='text-lg font-semibold  flex items-center gap-x-2 text-[#319D8E] hover:cursor-pointer'><FiBookOpen size={24}/><span>Learn<span className='text-[#FE7558]'>Engine</span></span></Link>
        </div>
        <div className="md:hidden">
-        <button onClick={toggleNavbar} className="text-natural-600 focus:outlie-none"><FaBars size={24}/></button>
+        <button onClick={toggleNavbar} className="text-natural-600 focus:outlie-none hover:cursor-pointer"><FaBars size={24}/></button>
        </div>
        <div className={`fixed md:static top-0 right-0 h-screen md:h-auto w-full md:w-auto bg-sky-50 border md:border-none border-neutral-300 md:bg-transparent shadow-lg md:shadow-none ease-in-out duration-300 transition-transform flex-1 ${isOpen ? "translate-x-0": "translate-x-full"} md:translate-x-0 z-60`}>
 
         <div className="w-full md:hidden flex items-center justify-between px-4">
-          <Link to="/" className='text-lg font-semibold  flex items-center gap-x-2 text-[#319D8E]'><FiBookOpen size={24}/><span>Learn<span className='text-[#FE7558]'>Engine</span></span></Link>
+          <Link to="home" smooth={true} duration={500} className='text-lg font-semibold  flex items-center gap-x-2 text-[#319D8E] hover:cursor-pointer'><FiBookOpen size={24}/><span>Learn<span className='text-[#FE7558]'>Engine</span></span></Link>
           <div className='md:hidden flex justify-end py-6'>
           <button onClick={closerNavbar} className="text-natural-600 focus:outlie-none"><IoMdClose size={24}/></button>
           </div>
@@ -55,20 +56,20 @@ const Navbar = () => {
     <div className="flex flex-1 flex-col justify-center gap-[70px] items-center md:justify-end md:flex-row  p-6 md:p-0">
         <ul className="flex flex-col md:flex-row gap-6 text-neutral-600 font-medium">
             <li>
-                <Link to="/" onClick={closerNavbar} className={`hover:text-[#319D8E] ${location.pathname === '/' ? 'text-[#319D8E]' : ''}`}>Home</Link>
+                <Link to="home" smooth={true} duration={500} onClick={closerNavbar} className={`hover:cursor-pointer hover:text-[#319D8E] ${location.pathname === '/' ? 'text-[#319D8E]' : ''}`}>Home</Link>
             </li>
             <li>
-                <Link to="/courses" onClick={closerNavbar} className={`hover:text-[#319D8E] ${location.pathname === '/courses' ? 'text-[#319D8E]' : ''}`}>Courses</Link>
+                <Link to="courses" smooth={true} duration={500} onClick={closerNavbar} className={`hover:cursor-pointer hover:text-[#319D8E] ${location.pathname === '/courses' ? 'text-[#319D8E]' : ''}`}>Courses</Link>
             </li>
             <li>
-                <Link to="/about" onClick={closerNavbar} className={`hover:text-[#319D8E] ${location.pathname === '/about' ? 'text-[#319D8E]' : ''}`}>About</Link>
+                <Link to="about" smooth={true} duration={500} onClick={closerNavbar} className={`hover:cursor-pointer hover:text-[#319D8E] ${location.pathname === '/about' ? 'text-[#319D8E]' : ''}`}>About</Link>
             </li>
             <li>
-                <Link to="/contact" onClick={closerNavbar} className={`hover:text-[#319D8E] ${location.pathname === '/contact' ? 'text-[#319D8E]' : ''}`}>Contact</Link>
+                <Link to="contact" smooth={true} duration={500} onClick={closerNavbar} className={`hover:cursor-pointer hover:text-[#319D8E] ${location.pathname === '/contact' ? 'text-[#319D8E]' : ''}`}>Contact</Link>
             </li>
         </ul>
         <div className="flex items-center gap-4">
-            <Link to="/login" onClick={closerNavbar} className="px-4 py-2 border border-[#319D8E] text-[#319D8E] rounded hover:bg-[#319D8E] hover:text-white transition-all duration-300 ease-in-out">Sign In</Link>
+            <Link to="/login" onClick={closerNavbar} className="px-4 hover:cursor-pointer py-2 border border-[#319D8E] text-[#319D8E] rounded hover:bg-[#319D8E] hover:text-white transition-all duration-300 ease-in-out">Sign In</Link>
             
         </div>
     </div>
