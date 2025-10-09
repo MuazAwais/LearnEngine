@@ -8,7 +8,7 @@ import ContectUs from './contactUs'
 import { Element, scroller } from 'react-scroll'
 const Home = () => {
   return (
-    <div className='mt-[72px] flex flex-col gap-[30px] sm:gap-[50px] md:gap-[70px] lg:gap-[90px] xl:gap-[110px]'>
+    <div className='mt-[72px] flex flex-col gap-[60px] sm:gap-[70px] md:gap-[80px] lg:gap-[90px] xl:gap-[110px]'>
         <Element name="home" className='section'>
         <HeroSection />
         </Element>
