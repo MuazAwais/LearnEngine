@@ -28,7 +28,7 @@ const InstructorsCard = () => {
                 <h3 className="text-[18px]">{instructor.name}</h3>
                 <p className="text-[#8A8A8A] text-[12px]">{instructor.title}</p>
               </div>
-              <button className="bg-[#319D8E] px-[25px] py-[13px] rounded-xl text-white flex items-center">
+              <button className="hover:bg-[#319D8E] px-[25px] py-[13px] rounded-xl hover:text-white flex items-center bg-white text-[#319D8E] border border-[#319D8E] hover:cursor-pointer transition-all duration-300 ease-in-out text-[12px]">
                 Join Now
               </button>
             </div>
@@ -50,7 +50,7 @@ const InstructorsCard = () => {
         ))}
       </div>
       <div>
-        <button className="bg-[#FE7558] mx-auto px-[25px] py-[13px] rounded-xl text-white text-[12px] flex items-center justify-center">
+        <button className="hover:bg-[#FE7558] mx-auto px-[25px] py-[13px] rounded-xl hover:text-white text-[12px] flex items-center justify-center bg-white text-[#FE7558] border border-[#FE7558] hover:cursor-pointer transition-all duration-300 ease-in-out">
           See more...
         </button>
       </div>

@@ -39,7 +39,7 @@ const AboutUs = () => {
             24/7 access on any device
           </div>
         </div>
-        <button className="flex items-center py-[13px] px-[15px] bg-[#FE7558] text-white text-[12px] max-w-fit rounded-lg">
+        <button className="flex items-center py-[13px] px-[15px] hover:bg-[#FE7558] hover:text-white text-[12px] max-w-fit rounded-lg bg-white text-[#FE7558] border border-[#FE7558] hover:cursor-pointer transition-all duration-300 ease-in-out">
           Learn more...
         </button>
       </div>

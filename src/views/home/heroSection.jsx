@@ -24,10 +24,10 @@ const HeroSection = () => {
 
         {/* Buttons */}
         <div className="flex gap-5">
-          <button className="py-3 px-4 bg-[#FE7558] text-white text-xs rounded-xl hover:bg-[#fac2b7] hover:text-[#4e4e4e]">
+          <button className="py-3 px-4 bg-[#FE7558] text-white text-xs rounded-xl hover:bg-[#fac2b7] hover:text-[#4e4e4e] hover:cursor-pointer transition-all duration-300 ease-in-out">
             Start Learning
           </button>
-          <button className="py-3 px-4 border-2 border-black text-xs rounded-xl hover:bg-[#181818] hover:text-white">
+          <button className="py-3 px-4 border-2 border-black text-xs rounded-xl hover:bg-[#181818] hover:text-white hover:cursor-pointer transition-all duration-300 ease-in-out">
             Discover
           </button>
         </div>
@@ -39,7 +39,7 @@ const HeroSection = () => {
           {/* Rotated background card */}
           <div className="bg-[#CEEBE4] w-[290px] xsm:w-[338px] h-[290px] xsm:h-[338px] absolute z-[1] rounded-lg rotate-[15deg]"></div>
           {/* Back card */}
-          <div className="bg-[#F8775B] w-[290px]  xsm:w-[338px] h-[290px] xsm:h-[338px] absolute z-[2] rounded-lg"></div>
+          <div className="bg-[#F8775B] w-[290px]  xsm:w-[338px] h-[290px] xsm:h-[338px] absolute z-[2] rounded-lg "></div>
           {/* Image */}
           <div className="z-[3] w-[330px] xsm:w-[350px]">
             <img
