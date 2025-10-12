@@ -3,7 +3,8 @@ import { FaChevronDown } from "react-icons/fa6";
 
 const AboutUs = () => {
   return (
-    <div className="max-w-[1440px] mx-auto flex flex-col justify-between items-center gap-10 xl:gap-[130px] xl:flex-row px-2">
+    <div className="container">
+      <div className="flex flex-col justify-between items-center xl:flex-row px-2">
       <div className="w-[345px] xsm:w-[395px] sm:w-[595px] md:w-[695px]  mx-auto relative flex justify-center py-[20px] md:py-[30px] px-[20px] md:px-[50px]">
         <div className="w-[96px] h-[96px] sm:w-[150px] sm:h-[150px] md:w-[195px] md:h-[195px] bg-[#FFCFCF] rounded-xl absolute top-0 right-0"></div>
         <div className="flex items-center justify-center z-[5]" >
@@ -14,7 +15,7 @@ const AboutUs = () => {
         </div>
         <div className="w-[250px] h-[105px] sm:w-[450px] sm:h-[255px] md:w-[578px] md:h-[325px] bg-[#319D8E] rounded-xl absolute left-0 bottom-0"></div>
       </div>
-      <div className="flex flex-col xl:max-w-[425px] gap-1 sm:gap-2 md:gap-3 lg:gap-4 mx-auto">
+      <div className="flex flex-col xl:max-w-[425px] gap-1 sm:gap-2 md:gap-3 lg:gap-4">
         <div className="text-[16px] font-normal text-[#FE7558]">ABOUT US</div>
         <div className="text-[30px] md:text-[40px] lg:text-[50px]">
           Welcome to online Class LearnEngine
@@ -43,6 +44,7 @@ const AboutUs = () => {
           Learn more...
         </button>
       </div>
+    </div>
     </div>
   );
 };

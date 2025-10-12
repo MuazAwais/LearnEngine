@@ -6,7 +6,8 @@ import Chart from '../../components/ui/chart';
 
 const HeroSection = () => {
   return (
-    <div className="max-w-[1440px] md:mx-auto px-2 flex flex-col xl:flex-row gap-4 xl:gap-[220px] relative">
+    <div className="container">
+      <div className="w-full flex flex-col xl:flex-row gap-4 xl:gap-[10px] relative justify-between">
       
       {/* LEFT: Text Section */}
       <div className="flex flex-col gap-6 xl:max-w-[450px]">
@@ -37,9 +38,9 @@ const HeroSection = () => {
       <div className="max-w-[700px] mx-auto flex relative ">
         <div className="relative flex flex-col justify-end items-center xsm:w-[400px] sm:w-[600px] md:w-[700px]">
           {/* Rotated background card */}
-          <div className="bg-[#CEEBE4] w-[290px] xsm:w-[338px] h-[290px] xsm:h-[338px] absolute z-[1] rounded-lg rotate-[15deg]"></div>
+          <div className="bg-[#CEEBE4] w-[290px] xsm:w-[338px] h-[290px] xsm:h-[338px] absolute z-[1] rounded-2xl rotate-[15deg]"></div>
           {/* Back card */}
-          <div className="bg-[#F8775B] w-[290px]  xsm:w-[338px] h-[290px] xsm:h-[338px] absolute z-[2] rounded-lg "></div>
+          <div className="bg-[#F8775B] w-[290px]  xsm:w-[338px] h-[290px] xsm:h-[338px] absolute z-[2] rounded-2xl "></div>
           {/* Image */}
           <div className="z-[3] w-[330px] xsm:w-[350px]">
             <img
@@ -58,6 +59,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

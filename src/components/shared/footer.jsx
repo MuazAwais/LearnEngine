@@ -17,9 +17,9 @@ const Footer = () => {
             © 2024 Learn Engine. All rights reserved.
           </div>
           <div className="flex gap-4 text-[20px]">
-              <div className="border-2 border-white px-2 py-2 rounded-full hover:text-[#319d8e] hover:bg-gray-100"><a href="https://www.facebook.com" target="block"><FaFacebookF /></a></div>
-              <div className="border-2 border-white px-2 py-2 rounded-full hover:text-[#319d8e] hover:bg-gray-100"><a href="hhtps://www.instagram.com" target="block"><FaInstagram /></a></div>
-              <div className="border-2 border-white px-2 py-2 rounded-full hover:text-[#319d8e] hover:bg-gray-100"><a href="https://www.x.com" target="block"><FaXTwitter /></a></div>
+              <div className="border-2 border-white px-2 py-2 rounded-full hover:text-[#319d8e] hover:cursor-pointer hover:bg-gray-100 transition-all ease-in-out duration-300"><a href="https://www.facebook.com" target="block"><FaFacebookF /></a></div>
+              <div className="border-2 border-white px-2 py-2 rounded-full hover:text-[#319d8e] hover:cursor-pointer hover:bg-gray-100 transition-all ease-in-out duration-300"><a href="hhtps://www.instagram.com" target="block"><FaInstagram /></a></div>
+              <div className="border-2 border-white px-2 py-2 rounded-full hover:text-[#319d8e] hover:cursor-pointer hover:bg-gray-100 transition-all ease-in-out duration-300"><a href="https://www.x.com" target="block"><FaXTwitter /></a></div>
           </div>
         </div>
         <div className="flex flex-col gap-4">

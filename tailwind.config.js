@@ -10,6 +10,14 @@ export default {
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
       },
+      container: {
+      "max-width": "1920px",
+      center: true,
+      padding: {
+        DEFAULT: "2rem",
+        
+      },
+    },
       },
       screens:  {
         'xsm' : '400px',

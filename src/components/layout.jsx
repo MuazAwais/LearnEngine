@@ -5,7 +5,7 @@ import Navbar from "./shared/navbar"
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div className="w-full">
         <Navbar/>
         {children}
         <Footer/>

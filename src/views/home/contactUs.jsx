@@ -42,7 +42,7 @@ const ContactUs = () => {
           Reach out, and let's create a universe of possibilities together!
         </div>
       </div>
-      <div className="max-w-[1090px] mx-auto backdrop-blur-sm rounded-xl border-sky-300 p-6 flex gap-4 h-fit bg-gray-100 ">
+      <div className="max-w-[1090px] mx-auto rounded-xl border-2 shadow-md p-6 flex gap-10 h-fit ">
         <div className="max-w-[340px] md:max-w-[515px] flex flex-col gap-4">
           <div className="flex flex-col gap-2">
             <div className="text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] font-semibold ">
@@ -117,7 +117,7 @@ const ContactUs = () => {
                 name="phoneNumber"
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
-                type="number"
+                type="phone"
                 className="px-4 py-3 w-full  rounded-lg border-gray-400 border-2"
                 placeholder="Phone Number"
                 {...formik.getFieldProps('phoneNumber')}
