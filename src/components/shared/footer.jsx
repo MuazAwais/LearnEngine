@@ -4,7 +4,9 @@ import { FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-scroll";
 const Footer = () => {
   return (
-    <div className="mt-[50px] bg-[#319D8E] text-gray-100">
+    <div className=" bg-[#319D8E] text-gray-100">
+      <div className="container">
+      <div className="mt-[50px]">
       <div className="max-w-[1440px] mx-auto px-6 py-10 flex flex-col md:flex-row gap-6 md:gap-0 justify-around">
         <div className="flex flex-col gap-4">
           <div className="text-[24px] md:text-[30px] lg:text-[35px] font-bold">
@@ -67,6 +69,8 @@ const Footer = () => {
         <div className="text-center text-[12px] md:text-[14px] lg:text-[16px] py-4">
           &copy; 2024 Learn Engine. All rights reserved.
         </div>
+      </div>
+    </div>
       </div>
     </div>
   );

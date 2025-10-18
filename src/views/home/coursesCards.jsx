@@ -7,7 +7,8 @@ import { WiTime4 } from "react-icons/wi";
 const CoursesCards = ({ cardData }) => {
   const card = cardData;
   return (
-    <div className="max-w-[1440px] mx-auto flex flex-col">
+    <div className="container">
+      <div className="max-w-[1440px] mx-auto flex flex-col">
       <div className="flex flex-col gap-3 w-full mx-auto px-2 text-center">
         <h2 className="uppercase text-[#FE7558] text-[18px]">
           Students Favorite
@@ -94,6 +95,7 @@ const CoursesCards = ({ cardData }) => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };

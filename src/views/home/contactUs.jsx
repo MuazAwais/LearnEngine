@@ -33,7 +33,8 @@ const ContactUs = () => {
     },
   });
   return (
-    <div className="max-w-[1440px] mx-auto flex flex-col gap-2">
+    <div className="container">
+      <div className="max-w-[1440px] mx-auto flex flex-col gap-2">
       <div className="flex flex-col items-center justify-center text-center">
         <div className="text-[40px] sm:text-[50px] md:text-[60px] lg:text-[65px] xl:text-[70px] font-bold bg-gradient-to-r from-gray-400 via-[#45c9c2] to-[#f8775b] text-transparent bg-clip-text inline-block">
           Get in touch
@@ -162,6 +163,7 @@ const ContactUs = () => {
           />
         </div>
       </div>
+    </div>
     </div>
   );
 };

@@ -11,7 +11,7 @@ export default {
         roboto: ["Roboto", "sans-serif"],
       },
       container: {
-      "max-width": "1920px",
+      "max-width": "1440px",
       center: true,
       padding: {
         DEFAULT: "1rem",

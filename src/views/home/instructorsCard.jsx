@@ -7,16 +7,17 @@ import { GoStarFill } from "react-icons/go";
 const InstructorsCard = () => {
   const card = instructors;
   return (
-    <div className="max-w-[1440px] mx-auto w-full flex flex-col">
+    <div className="container">
+      <div className="max-w-[1440px] mx-auto w-full flex flex-col">
       <h2 className="uppercase text-[#FE7558] text-[18px]">Instructors</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 py-4 place-items-center">
         {/* Single Instructor Card */}
         {card.map((instructor, index) => (
           <div
             key={index}
-            className="flex flex-col items-center max-w-[305px] gap-3"
+            className="flex flex-col items-center max-w-[305px] gap-3 shadow-lg rounded-xl p-2"
           >
-            <div className="bg-[#87624E] rounded-xl w-[305px] h-[325px] flex flex-col items-center justify-center overflow-hidden">
+            <div className="bg-[#87624E] rounded-xl w-[296px] h-[296px] flex flex-col items-center justify-center overflow-hidden">
               <img
                 src={instructor.image}
                 alt={instructor.title}
@@ -54,6 +55,7 @@ const InstructorsCard = () => {
           See more...
         </button>
       </div>
+    </div>
     </div>
   );
 };
