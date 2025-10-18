@@ -10,7 +10,7 @@ const HeroSection = () => {
       <div className="w-full flex flex-col xl:flex-row gap-4 xl:gap-[10px] relative justify-between">
       
       {/* LEFT: Text Section */}
-      <div className="flex flex-col gap-6 xl:max-w-[450px]">
+      <div className="flex flex-col gap-6 xl:max-w-[650px]">
         <div>
           <span className="text-xs text-[#41CB47] font-normal">
             Best way to learn from anywhere
@@ -35,7 +35,7 @@ const HeroSection = () => {
       </div>
 
       {/* RIGHT: Image Section */}
-      <div className="max-w-[700px] mx-auto flex relative ">
+      <div className="w-[600px] mx-auto sm:flex relative hidden">
         <div className="relative flex flex-col justify-end items-center xsm:w-[400px] sm:w-[600px] md:w-[700px]">
           {/* Rotated background card */}
           <div className="bg-[#CEEBE4] w-[290px] xsm:w-[338px] h-[290px] xsm:h-[338px] absolute z-[1] rounded-2xl rotate-[15deg]"></div>

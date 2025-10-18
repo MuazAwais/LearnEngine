@@ -35,9 +35,9 @@ const Navbar = () => {
     };
   }, []);
   return (
-    <div className={`mx-auto sticky top-0 z-[99999] bg-white/80  ${
+    <div className={`mx-auto sticky top-0 z-[99999] bg-white  ${
           isScrolled 
-            ? 'top-5 w-[80%] rounded-2xl backdrop-blur-2xl bg-white/80' 
+            ? 'top-5 w-[95%] sm:w-[90%] rounded-2xl backdrop-blur-2xl bg-white/80' 
             : 'top-0 w-full rounded-none border-l-0 border-r-0 border-t-0'
         }`}>
       <div className="container mx-auto">
@@ -45,7 +45,7 @@ const Navbar = () => {
         id="navbar"
         className={`h-[8ch] flex items-center justify-between transition-all ease-in-out duration-50 `}
       >
-        <div className="flex items-center gap-2 md:pr-16 pr-0">
+        <div className="flex items-center gap-2 lg:pr-16 pr-0">
           <Link
             to="home"
             smooth={true}
@@ -63,15 +63,15 @@ const Navbar = () => {
             onClick={toggleNavbar}
             className="text-neutral-600 focus:outline-none hover:cursor-pointer"
           >
-            <FaBars size={24} />
+           {isOpen ? <IoMdClose size={24} /> : <FaBars size={24} />}
           </button>
         </div>
         <div
-          className={`fixed md:static top-0 right-0 h-screen md:h-auto bg-sky-50 border md:border-none border-neutral-300 md:bg-transparent shadow-lg md:shadow-none ease-in-out duration-300 transition-transform flex-1 ${
-            isOpen ? "translate-x-0" : "translate-x-full"
-          } md:translate-x-0 z-60`}
+          className={`fixed md:static max-h-[400px] top-0 right-5 w-1/2 rounded-lg  md:h-auto bg-slate-50 border md:border-none border-neutral-300 md:bg-transparent shadow-lg md:shadow-none ease-in-out duration-300 transition-transform flex-1 ${
+            isOpen ? "translate-y-16 md:translate-y-0" : "-translate-y-[450px] md:translate-y-0"
+          } z-60`}
         >
-          <div className="w-full md:hidden flex items-center justify-between px-4">
+          {/* <div className="w-full md:hidden flex items-center justify-between px-4">
             <Link
               to="home"
               smooth={true}
@@ -91,11 +91,11 @@ const Navbar = () => {
                 <IoMdClose size={24} />
               </button>
             </div>
-          </div>
+          </div> */}
 
           <div className="border-b border-neutral-300 md:hidden"></div>
 
-          <div className="flex flex-1 flex-col justify-center gap-[70px] items-center md:justify-end md:flex-row p-6 md:p-0">
+          <div className="flex flex-1 flex-col justify-center gap-x-[20px] md:gap-x-[30px] lg:gap-x-[70px] gap-y-[20px] items-center md:justify-end md:flex-row p-6 md:p-0">
             <ul className="flex flex-col md:flex-row gap-6 text-neutral-600 font-medium">
               <li>
                 <Link
@@ -154,7 +154,7 @@ const Navbar = () => {
               <Link
                 to="/login"
                 onClick={closerNavbar}
-                className="px-4 hover:cursor-pointer py-2 border border-[#319D8E] text-[#319D8E] rounded hover:bg-[#319D8E] hover:text-white transition-all duration-300 ease-in-out"
+                className="px-4 hover:cursor-pointer py-2 border hover:border-[#319D8E] hover:text-[#319D8E] rounded bg-[#319D8E] text-white hover:bg-slate-50 transition-all duration-300 ease-in-out"
               >
                 Sign In
               </Link>

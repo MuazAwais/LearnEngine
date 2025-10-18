@@ -12,7 +12,6 @@ const Home = () => {
         <Element name="home" className='section'>
         <HeroSection />
         </Element>
-        <hr  className='md:hidden px-[30px]'/>
         <Element name="partners" className='section'>
         <PartnersCompanies/>
         </Element>
