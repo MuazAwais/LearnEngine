@@ -73,7 +73,7 @@ const CoursesCards = ({ cardData }) => {
                   <img
                     src={course.instructorImage}
                     alt={course.instructorImage}
-                    className=""
+                    className="cover"
                   />
                 </div>
                 <div className="text-[16px] font-semibold">

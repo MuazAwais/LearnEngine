@@ -8,8 +8,8 @@ const AboutUs = () => {
       <div className="w-[345px] xsm:w-[395px] sm:w-[595px] md:w-[695px]  relative flex justify-center pt-[61px] pr-[50px] pl-[68px] pb-[48px]">
         <div className="w-[96px] h-[96px] sm:w-[150px] sm:h-[150px] md:w-[195px] md:h-[195px] bg-[#FFCFCF] rounded-xl absolute top-0 right-0"></div>
         <div className="flex items-center justify-center z-[5]" >
-          <video autoPlay loop muted className="rounded-xl mx-auto w-[350px] sm:w-[550px] md:w-[577px] overflow-hidden">
-            <source src="https://res.cloudinary.com/dv8dtipj1/video/upload/v1758645311/2516162-hd_1920_1080_24fps_iuusja.mp4" type="video/mp4" autoPlay muted className="rounded-xl w-full h-full" />
+          <video controlsList="play"  muted className="rounded-xl mx-auto w-[350px] sm:w-[550px] md:w-[577px] overflow-hidden">
+            <source src="https://res.cloudinary.com/dv8dtipj1/video/upload/v1758645311/2516162-hd_1920_1080_24fps_iuusja.mp4" type="video/mp4" muted className="rounded-xl w-full h-full" />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -39,7 +39,7 @@ const AboutUs = () => {
             24/7 access on any device
           </div>
         </div>
-        <button className="flex items-center py-[13px] px-[15px] hover:bg-[#FE7558] hover:text-white text-[12px] max-w-fit rounded-lg bg-white text-[#FE7558] border border-[#FE7558] hover:cursor-pointer transition-all duration-300 ease-in-out">
+        <button className="flex items-center py-[13px] px-[15px] bg-[#FE7558] text-white text-[12px] max-w-fit rounded-lg hover:bg-white hover:text-[#FE7558] border border-[#FE7558] hover:cursor-pointer transition-all duration-300 ease-in-out">
           Learn more...
         </button>
       </div>
