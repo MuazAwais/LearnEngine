@@ -1,6 +1,8 @@
 import React from "react";
+import { CiMail } from "react-icons/ci";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaAddressCard, FaXTwitter } from "react-icons/fa6";
+import { RiContactsLine } from "react-icons/ri";
 import { Link } from "react-scroll";
 const Footer = () => {
   return (
@@ -52,14 +54,14 @@ const Footer = () => {
           </div>
           <div className="flex flex-col gap-2 text-[12px] md:text-[14px] lg:text-[16px]">
             <div className="flex gap-2">
-              <div>Address</div>:{" "}
+              <div className="flex gap-2 items-center"><FaAddressCard />{" "}Address</div>:{" "}
               <div>47 W 13th St, New York, NY 10011, USA </div>
             </div>
             <div className="flex gap-2">
-              <div>Contect</div> : <div>+1 234 567 890</div>
+              <div className="flex gap-2 items-center"><RiContactsLine />{" "}Contect</div> : <div>+1 234 567 890</div>
             </div>
             <div className="flex gap-2">
-              <div>Email</div> : <div>learnengine@info.pk</div>
+              <div className="flex gap-2 items-center"><CiMail />{" "}Email</div> : <div>learnengine@info.pk</div>
             </div>
           </div>
         </div>
